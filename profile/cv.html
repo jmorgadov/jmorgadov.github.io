@@ -10,10 +10,10 @@
 </head>
 
 <body class="bg-gray-900 text-gray-300">
-    <div class="abosulte top-0 left-0 right-0 bg-gray-800 pt-6 pb-3 shadow-2xl sticky">
+    <div class="abosulte top-0 left-0 right-0 bg-gray-800 pt-2 pb-3 shadow-2xl sticky transition-all duration-300 ease-in-out " id="topbar">
         <div class="mx-auto w-full md:w-3/4 lg:w-3/5 px-8 md:px-0">
-            <p class="text-4xl sm:text-5xl font-thin mb-2">Jorge Morgado Vega</p>
-            <a class="font-thin text-gray-400" href="mailto:jorge.morgadov@gmail.com">jorge.morgadov@gmail.com</a>
+            <p class="text-3xl text-gray-100 sm:text-4xl font-thin mb-2 transition-all duration-300 ease-in-out" id="title">Jorge Morgado Vega</p>
+            <a class="font-thin" href="mailto:jorge.morgadov@gmail.com">jorge.morgadov@gmail.com</a>
         </div>
     </div>
     <div class="mx-auto w-full md:w-3/4 lg:w-3/5 px-8 md:px-0 mb-8">
@@ -28,7 +28,7 @@
                         <p class="inline font-bold">UNIVERSITY OF HAVANA,</p>
                         <p class="inline">Cuba</p>
                         <p class="">B. S. in Computer Science</p>
-                        <p class=" text-gray-500">Expected February 2023</p>
+                        <p class="text-gray-500 font-thin">Expected February 2023</p>
                     </div>
 
                     <div>
@@ -36,19 +36,19 @@
                         <p class="border-b border-gray-700 mb-1"></p>
                         <div>
                             <p class="inline font-bold">Programming languages</p>
-                            <div class="ml-4 italic text-gray-400">
+                            <div class="ml-4 italic text-gray-400 font-thin">
                                 Python, C#, C, C++
                             </div>
                         </div>
                         <div>
                             <p class="inline font-bold">Knowledges</p>
-                            <div class="ml-4 italic text-gray-400">
+                            <div class="ml-4 italic text-gray-400 font-thin">
                                 Software development, Game development, Movile development, API consuming, Web scrapping
                             </div>
                         </div>
                         <div>
                             <p class="inline font-bold">Additional</p>
-                            <div class="ml-4 italic text-gray-400">
+                            <div class="ml-4 italic text-gray-400 font-thin">
                                 Git, Unity3D, Latex, Markdown, Sphinx, Django, HTML5, CSS, Tailwind
                             </div>
                         </div>
@@ -59,21 +59,23 @@
                     <div>
                         <p class="text-2xl sm:text-3xl font-extralight mb-1">COURSES</p>
                         <p class="border-b border-gray-700 mb-1"></p>
-                        <li> Programming </li>
-                        <li> Algebra I and II </li>
-                        <li> Mathematical Analyisis I and II </li>
-                        <li> Analytic Geometry I and II </li>
-                        <li> Mathematical Logic </li>
-                        <li> Data structure and algorithms I and II </li>
-                        <li> Discrete Mathematics I and II</li>
-                        <li> Computer architecture </li>
-                        <li> Numerical mathematics </li>
-                        <li> Operating systems </li>
-                        <li> Optimization models </li>
-                        <li> Computer networks </li>
-                        <li> Probabilities </li>
-                        <li> Statistics </li>
-                        <li> Data base systems </li>
+                        <div class="font-thin">
+                            <li> Programming </li>
+                            <li> Algebra I and II </li>
+                            <li> Mathematical Analyisis I and II </li>
+                            <li> Analytic Geometry I and II </li>
+                            <li> Mathematical Logic </li>
+                            <li> Data structure and algorithms I and II </li>
+                            <li> Discrete Mathematics I and II</li>
+                            <li> Computer architecture </li>
+                            <li> Numerical mathematics </li>
+                            <li> Operating systems </li>
+                            <li> Optimization models </li>
+                            <li> Computer networks </li>
+                            <li> Probabilities </li>
+                            <li> Statistics </li>
+                            <li> Data base systems </li>
+                        </div>
                     </div>
 
                     <div>
@@ -81,13 +83,13 @@
                         <p class="border-b border-gray-700 mb-1"></p>
                         <div>
                             <p class="inline font-bold">Spanish</p>
-                            <div class="inline italic text-gray-400">
+                            <div class="inline italic text-gray-400 font-thin">
                                 - Native
                             </div>
                         </div>
                         <div>
                             <p class="inline font-bold">English</p>
-                            <div class="inline italic text-gray-400">
+                            <div class="inline italic text-gray-400 font-thin">
                                 - Intermediate
                             </div>
                         </div>
@@ -98,12 +100,17 @@
                         <p class="border-b border-gray-700 mb-1"></p>
                         <div class="flex flex-row gap-1">
                             <p class="font-bold">Github:</p>
-                            <a class="" href="https://github.com/jmorgadov">jmorgadov</a>
+                            <a class="font-thin" href="https://github.com/jmorgadov">jmorgadov</a>
+                        </div>
+                        <div class="flex flex-row gap-1">
+                            <p class="font-bold">Twitter:</p>
+                            <a class="font-thin" href="https://twitter.com/morgado305/">@morgado305</a>
                         </div>
                         <div class="flex flex-row gap-1">
                             <p class="font-bold">Stackoverflow:</p>
-                            <a class="" href="https://stackoverflow.com/users/11915595/jorge-morgado">jorge-morgado</a>
+                            <a class="font-thin" href="https://stackoverflow.com/users/11915595/jorge-morgado">jorge-morgado</a>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="sm:w-2/3 flex flex-col gap-6">
@@ -174,5 +181,41 @@
 
     </div>
 </body>
+
+<script>
+    const topbar = document.querySelector('#topbar')
+    const title = document.querySelector('#title')
+    window.addEventListener('scroll', () => {
+        var offset = window.pageYOffset;
+
+        // if (offset > 0) {
+        //     topbar.classList.remove('pt-6')
+        //     topbar.classList.add('pt-2')
+        //     // topbar.classList.remove('bg-gray-900')
+        //     // topbar.classList.add('shadow-2xl')
+        //     // topbar.classList.add('bg-gray-800')
+
+        //     title.classList.remove('text-4xl')
+        //     title.classList.remove('sm:text-5xl')
+        //     title.classList.remove('mb-2')
+        //     title.classList.add('text-3xl')
+        //     title.classList.add('sm:text-4xl')
+            
+        // } else {
+        //     topbar.classList.add('pt-6')
+        //     topbar.classList.remove('pt-2')
+        //     // topbar.classList.add('bg-gray-900')
+        //     // topbar.classList.remove('bg-gray-800')
+        //     // topbar.classList.remove('shadow-2xl')
+
+        //     title.classList.add('text-4xl')
+        //     title.classList.add('sm:text-5xl')
+        //     title.classList.add('mb-2')
+        //     title.classList.remove('text-3xl')
+        //     title.classList.remove('sm:text-4xl')
+        // }
+        
+    })
+</script>
 
 </html>
