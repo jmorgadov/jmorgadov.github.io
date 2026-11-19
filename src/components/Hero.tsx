@@ -66,12 +66,6 @@ export function Hero() {
               variants={rise}
               className="mt-5 flex flex-wrap items-center justify-center gap-3 sm:mt-8"
             >
-              <a
-                href={`mailto:${personal.email}`}
-                className="rounded-full bg-ink px-5 py-2.5 font-display font-medium text-paper transition-transform hover:-translate-y-0.5 active:translate-y-0"
-              >
-                {t.emailMe}
-              </a>
               {__HAS_CV__ && (
                 <a
                   href="/cv.pdf"
@@ -82,7 +76,7 @@ export function Hero() {
                   {t.downloadCv}
                 </a>
               )}
-              <ul className="ml-1 flex items-center gap-1">
+              <ul className="flex items-center gap-1">
                 {(Object.keys(socialIcons) as (keyof typeof socialIcons)[]).map((key) => {
                   const href = socials[key];
                   if (!href) return null;

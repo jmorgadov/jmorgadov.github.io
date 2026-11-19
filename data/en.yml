@@ -13,7 +13,7 @@ personal:
   email: jorge.morgadov@gmail.com
   phone: +39 3517621143
   location: L'Aquila, Italy
-  slogan: Software Engineer · Full-Stack & ML
+  slogan: Software Engineer · Full-Stack · Applied AI & LLMs
   # website:
   shortbio: Developer of scientific and open-source software with full-stack experience
     building web and mobile apps.
@@ -25,8 +25,7 @@ socials:
   linkedin: https://www.linkedin.com/in/jmorgadov/
   twitter: https://twitter.com/morgado305
   github: https://github.com/jmorgadov
-  googlescholar: https://scholar.google.com/citations?user=JUoHOqQAAAAJ
-  # googlescholar: https://scholar.google.com/citations?user=TJzM0BkAAAAJ
+  googlescholar: https://scholar.google.com/citations?user=TJzM0BkAAAAJ&hl=en
   orcid: https://orcid.org/0000-0001-6067-9172
 
 # ------------------------------------------------------------------
@@ -123,7 +122,7 @@ publications:
     year: 2025
     venue: 12th International Conference on Digital Libraries for Musicology (DLfM),
       2025
-    citations: 4
+    citations: 3
     coauthors: JJ Morgado-Vega, S Sharma, F Simonetta
     link: https://doi.org/10.1145/3748336.3748340
   - title: 'Improving trajectory classification through Kramers-Moyal coefficients'
@@ -136,7 +135,7 @@ publications:
   - title: 'yupi: Generation, Tracking and Analysis of Trajectory data in Python'
     year: 2023
     venue: Environmental Modelling & Software 163, 105679, 2023
-    citations: 6
+    citations: 14
     coauthors: A Reyes, G Viera-López, JJ Morgado-Vega, E Altshuler
     link: 
       https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u5HHmVD_uO8C
@@ -397,7 +396,7 @@ skills:
 # ------------------------------------------------------------------
 stats:
   publications: 4
-  citations: 14
+  citations: 21
   students: 0
   courses_taught: 3
 
