@@ -1,0 +1,424 @@
+# ------------------------------------------------------------------
+#  LANGUAGE
+# ------------------------------------------------------------------
+lang: en
+
+# ------------------------------------------------------------------
+#  PERSONAL
+# ------------------------------------------------------------------
+personal:
+  name: Jorge Junior
+  last_name: Morgado Vega
+  user_name: jmorgadov
+  email: jorge.morgadov@gmail.com
+  phone: +39 3517621143
+  location: L'Aquila, Italy
+  slogan: Software Engineer · Full-Stack & ML
+  # website:
+  shortbio: Developer of scientific and open-source software with full-stack experience
+    building web and mobile apps.
+
+# ------------------------------------------------------------------
+#  SOCIALS
+# ------------------------------------------------------------------
+socials:
+  linkedin: https://www.linkedin.com/in/jmorgadov/
+  twitter: https://twitter.com/morgado305
+  github: https://github.com/jmorgadov
+  googlescholar: https://scholar.google.com/citations?user=JUoHOqQAAAAJ
+  # googlescholar: https://scholar.google.com/citations?user=TJzM0BkAAAAJ
+  orcid: https://orcid.org/0000-0001-6067-9172
+
+# ------------------------------------------------------------------
+#  EDUCATION
+# ------------------------------------------------------------------
+education:
+  - degree: PhD in Computer Science
+    start_year: 2023
+    end_year: present
+    institution: Gran Sasso Science Institute
+    location: L'Aquila, Italy
+    thesis_title: ''
+    exams: 8
+  - degree: Degree in Computer Science
+    start_year: 2017
+    end_year: 2022
+    institution: University of Havana
+    location: Havana, Cuba
+    thesis_title: 'yupi: Plataforma para la generación, seguimiento y análisis de
+      trayectorias'
+    exams: 48
+
+# ------------------------------------------------------------------
+#  EXPERIENCE
+# ------------------------------------------------------------------
+experience:
+  - title: Researcher | PhD candidate
+    start_year: 2023
+    end_year: present
+    institution: Gran Sasso Science Institute
+    location: L'Aquila, Italy
+    highlights:
+      - Research on machine learning for music, including LLM-based music embeddings
+      - 2 peer-reviewed papers published, 1 more under review
+      - Full-stack developer of the web research platform of the Laudare Project
+    skills:
+      - Python
+      - PyTorch
+      - Hugging Face
+      - LLM integration
+      - Django
+      - React
+      - Docker
+      - PostgreSQL
+  - title: Junior Professor & Researcher
+    start_year: 2022
+    end_year: 2023
+    institution: University of Havana
+    location: Havana, Cuba
+    highlights:
+      - Lectured Operating Systems, Logic Principles and Introduction to Data Science
+      - Researched trajectory and human mobility analysis at the School of Physics
+      - Applied AI and machine learning to trajectory classification
+    skills:
+      - Python
+      - TensorFlow
+      - scikit-learn
+      - Pandas
+      - NumPy
+      - Jupyter
+      - C
+  - title: Software Developer
+    start_year: 2019
+    end_year: 2023
+    institution: EducUp
+    location: Havana, Cuba
+    highlights:
+      - Proposed and implemented several of the main features of the product
+      - Developed and maintained the company's main app (Flutter, Unity) and web services
+    skills:
+      - Flutter
+      - Dart
+      - Unity 3D
+      - C#
+      - REST APIs
+
+# ------------------------------------------------------------------
+#  PUBLICATIONS
+# ------------------------------------------------------------------
+publications:
+  - title: 'Drafting the Landscape of Computational Musicology Tools: a Survey-Based
+      Approach'
+    year: 2025
+    venue: 12th International Conference on Digital Libraries for Musicology (DLfM),
+      2025
+    citations: 4
+    coauthors: JJ Morgado-Vega, S Sharma, F Simonetta
+    link: https://doi.org/10.1145/3748336.3748340
+  - title: 'Improving trajectory classification through Kramers-Moyal coefficients'
+    year: 2024
+    venue: AI Open 5, 87-93, 2024
+    citations: 0
+    coauthors: G Viera-López, JJ Morgado-Vega, A Reyes, E Altshuler, Y Almeida-Cruz,
+      G Manganini
+    link: https://doi.org/10.1016/j.aiopen.2024.06.001
+  - title: 'yupi: Generation, Tracking and Analysis of Trajectory data in Python'
+    year: 2023
+    venue: Environmental Modelling & Software 163, 105679, 2023
+    citations: 6
+    coauthors: A Reyes, G Viera-López, JJ Morgado-Vega, E Altshuler
+    link: 
+      https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u5HHmVD_uO8C
+  - title: 'pactus: A Python framework for trajectory classification'
+    year: 2023
+    venue: Journal of Open Source Software 8 (89), 5738, 2023
+    citations: 4
+    coauthors: G Viera-López, JJ Morgado-Vega, A Reyes, E Altshuler, Y Almeida-Cruz,
+      ...
+    link: 
+      https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u-x6o8ySG0sC
+
+preprints: []
+
+events:
+  - name: Taller Inteligencia Artificial, Ciencia de Datos y Aplicaciones Criptográficas
+    year: 2017
+    link: https://handsonresearch.org/
+    institution: University of Havana
+    location: Havana, Cuba
+
+# ------------------------------------------------------------------
+#  STUDENTS
+# ------------------------------------------------------------------
+students: []
+
+# ------------------------------------------------------------------
+#  VOCATIONAL
+# ------------------------------------------------------------------
+vocational:
+  - title: Assistant Researcher
+    start_year: 2017
+    end_year: 2022
+    institution: Group of Complex Systems and Statistical Physics, School of Physics,
+      University of Havana
+    location: Havana, Cuba
+    highlights:
+      - Involved in research on Granular Matter, Group Behavior Analysis
+        and Human Mobility Analysis
+  - title: Assistant Researcher
+    start_year: 2020
+    end_year: 2022
+    institution: Artificial Intelligence Group, School of Math and Computer Science,
+      University of Havana
+    location: Havana, Cuba
+    highlights:
+      - Involved in research on Artificial Intelligence applied in Sport Events
+        Prediction
+  - title: Assistant Professor
+    start_year: 2018
+    end_year: 2019
+    institution: School of Math and Computer Science, University of Havana
+    location: Havana, Cuba
+    highlights:
+      - Assisted practical classes of Introduction to Programming
+
+# ------------------------------------------------------------------
+#  COURSES TAUGHT
+# ------------------------------------------------------------------
+courses_taught:
+  - title: Logic principles
+    program: Bachelor program in Data Science
+    dates:
+      - 2022-2023
+    institution: University of Havana
+    location: Cuba
+    highlights:
+      - Practical classes for 21 students
+  - title: Introduction to Data Science
+    program: Bachelor program in Data Science
+    dates:
+      - 2022-2023
+    institution: University of Havana
+    location: Cuba
+    highlights:
+      - Practical classes for 21 students
+  - title: Operating Systems
+    program: Bachelor program in Computer Science
+    dates:
+      - 2022-2023
+    institution: University of Havana
+    location: Cuba
+    highlights:
+      - Lectures for 80 students
+
+# ------------------------------------------------------------------
+#  LANGUAGES
+# ------------------------------------------------------------------
+languages:
+  es:
+    name: Spanish
+    level: Native Proficiency
+    level_cefr: C2
+    score: 5
+    flag: es
+  en:
+    name: English
+    level: Professional Proficiency
+    level_cefr: C1
+    score: 5
+    flag: gb
+  it:
+    name: Italian
+    level: Professional Proficiency
+    level_cefr: B1
+    score: 4
+    flag: it
+
+# ------------------------------------------------------------------
+#  PROJECTS
+# ------------------------------------------------------------------
+projects:
+  - title: 'Laudare Platform: Research platform for the Italian lauda repertoire'
+    start_year: 2024
+    end_year: present
+    description: Web platform to explore and research the Italian laude database of
+      the Laudare Project.
+    highlights:
+      - Unified access to manuscripts, texts and music of each lauda
+      - Efficient IIIF viewer for high-resolution manuscript images
+      - Music playback synchronized with the lauda texts
+    skills:
+      - Django
+      - React
+      - Docker
+      - IIIF
+  - title: 'Crescia: TOEFL practice platform'
+    start_year: 2025
+    end_year: present
+    link: https://www.crescialearn.com
+    description: TOEFL practice platform for students, currently in development as
+      a personal project.
+    highlights:
+      - Automatic evaluation of written answers with modern LLMs
+      - Speaking assessment powered by AI audio models
+    skills:
+      - Django
+      - React
+      - Docker
+      - LLMs
+  - title: 'pulse: Logic circuit simulator app'
+    start_year: 2025
+    end_year: 2025
+    link: https://github.com/jmorgadov/pulse
+    description: Cross-platform app to design and simulate logic circuits, built as
+      a personal prototype.
+    highlights:
+      - Build circuits from logic gates and reuse them as custom components
+      - Watch circuits run in real time and look inside any component while simulating
+      - Responsive interface even with several simulations running at once
+    skills:
+      - Flutter
+      - Dart
+  - title: 'yupi: Open Source Framework for Trajectory Data Analysis'
+    start_year: 2020
+    end_year: present
+    link: https://github.com/yupidevs/yupi
+    description: Python library for trajectory data generation, tracking and analysis.
+    highlights:
+      - Conceptualized the unified trajectory data model of the library
+      - Develop and maintain several core modules
+    skills:
+      - Python
+      - Testing
+      - CI/CD
+  - title: 'pactus: Open Source Framework for Trajectory Classification'
+    start_year: 2022
+    end_year: 2023
+    link: https://github.com/yupidevs/pactus
+    description: Python framework for trajectory classification.
+    highlights:
+      - Implemented classifiers from Random Forest and XGBoost to LSTM and Transformers
+      - Core developer and maintainer
+    skills:
+      - Python
+      - TensorFlow
+      - Testing
+  - title: 'yuca: CLI tool for fast personal data processing and visualization'
+    start_year: 2023
+    end_year: 2024
+    link: https://github.com/yuca-devs/yuca
+    description: CLI tool that generates documents such as CVs from personal data
+      and reusable templates.
+    highlights:
+      - Core developer and maintainer
+      - Recipe system with per-document filters and overrides
+    skills:
+      - Python
+      - Jinja2
+
+# ------------------------------------------------------------------
+#  EVENTS
+# ------------------------------------------------------------------
+skills:
+  Programming:
+    - Python
+    - TypeScript/JavaScript
+    - SQL
+    - Bash
+    - Dart
+    - Rust
+    - C#
+    - C
+  AI Engineering:
+    - Agentic Programming
+    - LLM integration
+    - OpenAI & Anthropic APIs
+    - AssemblyAI
+    - MCP
+    - AI agents
+    - Claude Code
+    - Codex
+  Backend & DevOps:
+    - Django
+    - Django REST Framework
+    - FastAPI
+    - Flask
+    - REST APIs
+    - PostgreSQL
+    - Redis
+    - Celery
+    - Docker
+    - AWS
+    - Nginx
+    - CI/CD
+    - GitHub Actions
+    - pytest
+    - PyPI packaging
+    - Git
+    - Linux
+  Frontend & Mobile:
+    - React
+    - Vite
+    - Tailwind CSS
+    - Flutter
+    - Riverpod
+    - Unity 3D
+    - HTML/CSS
+  Machine Learning & Data:
+    - PyTorch
+    - TensorFlow
+    - scikit-learn
+    - Hugging Face
+    - Pandas
+    - NumPy
+    - Jupyter
+    - OpenCV
+    - Computer Vision
+
+
+# ------------------------------------------------------------------
+#  STATS
+# ------------------------------------------------------------------
+stats:
+  publications: 4
+  citations: 14
+  students: 0
+  courses_taught: 3
+
+# ------------------------------------------------------------------
+#  AWARDS
+# ------------------------------------------------------------------
+awards:
+  - name: Fully funded scholarship for PhD studies
+    description: in the Gran Sasso Science Institute
+    year: 2023
+    institution: GSSI
+    location: L'Aquila, Italy
+  - name: Graduated with the Scientific Merit Award
+    description: ''
+    year: 2022
+    institution: University of Havana
+    location: Havana, Cuba
+  - name: Mention at the University of Havana Scientific Forum
+    description: 'for the project: yupi: Plataforma para la generación, seguimiento
+      y análisis de trayectorias'
+    year: 2022
+    institution: University of Havana
+    location: Havana, Cuba
+  - name: Silver medal at the Scientific Student Event
+    description: 'for the project: yupi: Plataforma para la generación, seguimiento
+      y análisis de trayectorias'
+    year: 2022
+    institution: University of Havana
+    location: Havana, Cuba
+  - name: Gold medal at the Scientific Student Event
+    description: 'for the project: Introducción a la simulación de medios granulares'
+    year: 2021
+    institution: University of Havana
+    location: Havana, Cuba
+  - name: Bronze medal at the Scientific Student Event
+    description: 'for the project: Lista enlazada piramidal, propuesta de una estructura
+      de datos'
+    year: 2019
+    institution: University of Havana
+    location: Havana, Cuba

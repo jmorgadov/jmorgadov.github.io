@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Change the accent here: everything else derives from these tokens. */
+:root {
+  --paper: #f3f4f1;
+  --paper-2: #e8eae4;
+  --ink: #1a1e2b;
+  --ink-2: #464d5e;
+  --ink-3: #646a7a;
+  --line: #d3d6ce;
+  --accent: #3346d3;
+  --accent-ink: #f3f4f1;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #11141b;
+  --paper-2: #1a1e28;
+  --ink: #e7e8e3;
+  --ink-2: #b4b9c4;
+  --ink-3: #8a90a0;
+  --line: #2b3140;
+  --accent: #8c9bff;
+  --accent-ink: #11141b;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: color-mix(in oklab, var(--accent) 12%, transparent);
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  &:hover,
+  &:focus-visible {
+    background-size: 100% 1px;
+  }
+}
