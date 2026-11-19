@@ -3,7 +3,7 @@ import { displayName } from "../data";
 import { useLang } from "../i18n";
 import { HighlightsFeed } from "./HighlightsFeed";
 import { DownloadIcon, MailIcon, PinIcon, socialIcons } from "./Icons";
-import { Portrait } from "./Portrait";
+import { ScrollCue } from "./ScrollCue";
 
 const stagger: Variants = {
   hidden: {},
@@ -26,13 +26,10 @@ export function Hero() {
         variants={stagger}
         initial="hidden"
         animate="show"
-        className="mx-auto flex min-h-[92svh] max-w-6xl flex-col justify-center gap-14 px-4 pt-32 pb-24 sm:px-8 lg:gap-20"
+        className="mx-auto flex min-h-[92svh] max-w-[78rem] flex-col justify-center gap-8 px-4 pt-20 pb-20 sm:gap-14 sm:px-8 sm:pt-32 sm:pb-24 lg:gap-20"
       >
-        <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-center sm:gap-10 lg:gap-14">
-          <motion.div variants={rise} className="shrink-0">
-            <Portrait className="w-48 sm:w-56 lg:w-64" />
-          </motion.div>
-          <div className="text-center sm:text-left">
+        <div className="flex flex-col items-center">
+          <div className="text-center">
             <motion.h1
               variants={rise}
               className="font-display text-[clamp(2.75rem,5.6vw,5.25rem)] leading-[0.95] font-semibold tracking-[-0.03em]"
@@ -43,14 +40,14 @@ export function Hero() {
             </motion.h1>
             <motion.p
               variants={rise}
-              className="mt-6 font-display text-xl font-medium text-accent sm:text-2xl"
+              className="mt-3 font-display text-xl font-medium text-accent sm:mt-6 sm:text-2xl"
             >
               {personal.slogan}
             </motion.p>
 
             <motion.div
               variants={rise}
-              className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-display text-base text-ink-2 sm:justify-start"
+              className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-1 font-display text-base text-ink-2 sm:mt-8 sm:gap-y-2"
             >
               <span className="inline-flex items-center gap-2">
                 <PinIcon className="size-4.5" />
@@ -67,7 +64,7 @@ export function Hero() {
 
             <motion.div
               variants={rise}
-              className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:justify-start"
+              className="mt-5 flex flex-wrap items-center justify-center gap-3 sm:mt-8"
             >
               <a
                 href={`mailto:${personal.email}`}
@@ -116,7 +113,7 @@ export function Hero() {
           </motion.div>
         )}
       </motion.div>
-
+      <ScrollCue />
     </header>
   );
 }

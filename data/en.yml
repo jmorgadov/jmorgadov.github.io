@@ -33,22 +33,12 @@ socials:
 #  HIGHLIGHTS (short, standalone lines shown in the website hero)
 # ------------------------------------------------------------------
 highlights:
-  - PhD researcher at GSSI working on machine learning for music and LLM-based
-    music embeddings.
-  - Full-stack developer of the Laudare platform, uniting manuscripts, texts and
-    music of the Italian laude.
-  - Building Crescia, a TOEFL practice platform that grades writing and speaking
-    with AI.
-  - Core developer of yupi, an open-source Python framework for trajectory data
-    analysis.
-  - Built pactus to classify trajectories with models from Random Forest to
-    Transformers.
-  - Published in Environmental Modelling & Software, AI Open and the Journal of
-    Open Source Software.
-  - Four years developing the main Flutter and Unity app at EducUp.
-  - Taught Operating Systems to 80 Computer Science students at the University of
-    Havana.
-  - Graduated from the University of Havana with the Scientific Merit Award.
+  - "7+ years building software, from mobile apps to research platforms."
+  - "Sole developer of Crescia, an AI-graded TOEFL practice platform, from database to AWS infrastructure."
+  - "Core developer of 2 open-source Python libraries for trajectory research."
+  - "Fully funded PhD at GSSI: 3 years researching machine learning for music."
+  - "4 peer-reviewed papers across machine learning and musicology."
+  - "Taught Operating Systems, Logic Principles and Introduction to Data Science to more than 80 students at the University of Havana."
 
 # ------------------------------------------------------------------
 #  EDUCATION

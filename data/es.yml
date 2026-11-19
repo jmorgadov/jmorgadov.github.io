@@ -33,22 +33,12 @@ socials:
 #  HIGHLIGHTS (short, standalone lines shown in the website hero)
 # ------------------------------------------------------------------
 highlights:
-  - Investigador y doctorando en el GSSI, trabajando en machine learning para la
-    música y embeddings musicales basados en LLM.
-  - Desarrollador full-stack de la plataforma Laudare, que reúne manuscritos,
-    textos y música de las laude italianas.
-  - Desarrollando Crescia, una plataforma de práctica para el TOEFL que evalúa la
-    escritura y la expresión oral con IA.
-  - Desarrollador principal de yupi, un framework de Python de código abierto para
-    el análisis de datos de trayectorias.
-  - Creé pactus para clasificar trayectorias con modelos que van desde Random
-    Forest hasta Transformers.
-  - Publicaciones en Environmental Modelling & Software, AI Open y Journal of Open
-    Source Software.
-  - Cuatro años desarrollando la app principal de EducUp en Flutter y Unity.
-  - Impartí Sistemas Operativos a 80 estudiantes de Ciencia de la Computación en la
-    Universidad de La Habana.
-  - Graduado de la Universidad de La Habana con el Premio al Mérito Científico.
+  - "Más de 7 años desarrollando software, desde apps móviles hasta plataformas de investigación."
+  - "Único desarrollador de Crescia, plataforma de práctica del TOEFL con evaluación por IA, desde la base de datos hasta la infraestructura en AWS."
+  - "Desarrollador principal de 2 bibliotecas de Python de código abierto para investigar trayectorias."
+  - "Doctorado con beca completa en el GSSI: 3 años investigando machine learning para la música."
+  - "4 artículos revisados por pares entre machine learning y musicología."
+  - "Impartí Sistemas Operativos, Principios de Lógica e Introducción a la Ciencia de Datos a más de 80 estudiantes en la Universidad de La Habana."
 
 # ------------------------------------------------------------------
 #  EDUCATION

@@ -125,3 +125,9 @@ export const CheckIcon = (p: IconProps) => (
     <path d="m5 12.5 4.5 4.5L19 7.5" />
   </Stroke>
 );
+
+export const ChevronDownIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <path d="m5 9 7 7 7-7" />
+  </Stroke>
+);

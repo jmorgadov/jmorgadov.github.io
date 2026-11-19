@@ -94,6 +94,55 @@
   }
 }
 
+/*
+ * Walks along the contour background (ContourLines.tsx). 24 walks start 1.5s
+ * apart, so the cycle is 36s. Each one is a single dash as long as its
+ * stretch (--l): it grows from the start to the end in 6s, rests, then shrinks
+ * from the start into the end by 9.7s. Offsets go half a pixel past the dash
+ * so no round cap lingers; the opacity keeps every walk hidden until its turn.
+ */
+.walk {
+  stroke-dasharray: var(--l) calc(var(--l) + 2px);
+  animation:
+    walk-draw 36s var(--delay) infinite both,
+    walk-show 36s var(--delay) infinite both;
+}
+
+@keyframes walk-draw {
+  0% {
+    stroke-dashoffset: calc(var(--l) + 0.5px);
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  17%,
+  19% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+  27%,
+  100% {
+    stroke-dashoffset: calc(-1 * var(--l) - 0.5px);
+  }
+}
+
+@keyframes walk-show {
+  0% {
+    opacity: 0;
+  }
+  0.3%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pattern-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @keyframes feed-progress {
   from {
     transform: scaleX(0);

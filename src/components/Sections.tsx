@@ -4,6 +4,7 @@ import { useLang } from "../i18n";
 import { ChipList } from "./Chip";
 import { Highlightable } from "./Highlightable";
 import { ExternalIcon } from "./Icons";
+import { ProjectArt } from "./ProjectArt";
 import { Section } from "./Section";
 
 function Highlights({ items }: { items?: string[] }) {
@@ -76,8 +77,9 @@ export function Projects() {
             <Highlightable
               key={project.title}
               skills={project.skills}
-              className="group flex flex-col border border-line p-5 transition-[border-color,transform] duration-300 hover:-translate-y-1 hover:border-ink/40 sm:p-6"
+              className="group isolate flex flex-col border border-line p-5 hover:-translate-y-1.5 hover:border-accent hover:shadow-[0_22px_45px_-24px_color-mix(in_oklab,var(--accent)_50%,transparent)] motion-reduce:hover:translate-y-0 sm:p-6"
             >
+              <ProjectArt title={project.title} />
               <div className="flex items-center justify-between gap-3">
                 <Years>{formatYears(project.start_year, project.end_year, t.present)}</Years>
                 {project.link && (

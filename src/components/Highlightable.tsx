@@ -18,7 +18,7 @@ export function Highlightable({
       data-match={state}
       animate={{ opacity: state === "dim" ? 0.32 : 1 }}
       transition={{ duration: 0.3 }}
-      className={`relative rounded-2xl transition-[box-shadow,background-color] duration-300 ${
+      className={`relative rounded-2xl transition-[box-shadow,background-color,border-color,translate] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         state === "match" ? "bg-accent-soft shadow-[0_0_0_1.5px_var(--accent)]" : ""
       } ${className}`}
     >

@@ -34,15 +34,7 @@ export function Footer() {
         })}
       </ul>
       <p className="mt-16 font-display text-sm text-ink-3">
-        © {new Date().getFullYear()} {personal.name} {personal.last_name}. {t.builtWith}{" "}
-        <a
-          href={`https://github.com/${personal.user_name}/${personal.user_name}.github.io`}
-          target="_blank"
-          rel="noreferrer"
-          className="underline underline-offset-2 hover:text-accent"
-        >
-          {t.source}
-        </a>
+        © {new Date().getFullYear()} {personal.name} {personal.last_name}. {t.builtWith}
       </p>
     </footer>
   );

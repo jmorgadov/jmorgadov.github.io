@@ -60,7 +60,7 @@ export function Nav({ items }: { items: NavItem[] }) {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-8">
+      <div className="mx-auto flex h-16 max-w-[78rem] items-center gap-4 px-4 sm:px-8">
         <a
           href="#top"
           aria-label={t.backToTop(displayName)}

@@ -14,7 +14,7 @@ export function Section({ id, title, aside, children }: SectionProps) {
     <section
       id={id}
       aria-labelledby={`${id}-title`}
-      className="grid gap-x-12 gap-y-8 border-t border-line py-16 md:grid-cols-[13rem_minmax(0,1fr)] md:py-24"
+      className="grid gap-x-12 gap-y-8 border-t border-line py-16 first:border-t-0 md:grid-cols-[13rem_minmax(0,1fr)] md:py-24"
     >
       <div>
         <div className="md:sticky md:top-24">

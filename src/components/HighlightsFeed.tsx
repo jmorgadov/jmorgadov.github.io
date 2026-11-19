@@ -256,7 +256,7 @@ function Highlight({ tokens, revealed, candidates }: HighlightProps) {
             <motion.g
               key={arc.id}
               className="text-accent"
-              exit={{ opacity: 0, transition: { duration: 0.6, ease: "easeOut" } }}
+              exit={{ opacity: 0, transition: { duration: 0.3, ease: "easeOut" } }}
             >
               <motion.path
                 d={arc.d}
@@ -346,7 +346,7 @@ export function HighlightsFeed({ items }: { items: string[] }) {
       onPointerEnter={() => setPaused(true)}
       onPointerLeave={() => setPaused(false)}
     >
-      <div aria-hidden="true" className="relative min-h-[11rem] pt-10 sm:min-h-[9rem]">
+      <div aria-hidden="true" className="relative min-h-[9.5rem] pt-6 sm:min-h-[9rem] sm:pt-10">
         <AnimatePresence initial={false} mode="popLayout" custom={direction}>
           <motion.div
             key={current.id}

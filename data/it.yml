@@ -33,22 +33,12 @@ socials:
 #  HIGHLIGHTS (short, standalone lines shown in the website hero)
 # ------------------------------------------------------------------
 highlights:
-  - Dottorando e ricercatore al GSSI, tra machine learning per la musica ed
-    embedding musicali basati su LLM.
-  - Sviluppatore full-stack della piattaforma Laudare, che riunisce manoscritti,
-    testi e musica delle laude italiane.
-  - Sto sviluppando Crescia, una piattaforma di preparazione al TOEFL che valuta
-    scrittura e parlato con l'IA.
-  - Core developer di yupi, un framework Python open source per l'analisi di dati
-    di traiettorie.
-  - Ho creato pactus per classificare traiettorie con modelli che vanno da Random
-    Forest ai Transformer.
-  - Pubblicazioni su Environmental Modelling & Software, AI Open e Journal of Open
-    Source Software.
-  - Quattro anni di sviluppo dell'app principale in Flutter e Unity di EducUp.
-  - Docente di Sistemi Operativi per 80 studenti di Informatica all'Università
-    dell'Avana.
-  - Laureato all'Università dell'Avana con il Premio al Merito Scientifico.
+  - "Oltre 7 anni di sviluppo software, dalle app mobile alle piattaforme di ricerca."
+  - "Unico sviluppatore di Crescia, piattaforma di preparazione al TOEFL con valutazione IA, dal database all'infrastruttura AWS."
+  - "Core developer di 2 librerie Python open source per la ricerca sulle traiettorie."
+  - "Dottorato interamente finanziato al GSSI: 3 anni di ricerca sul machine learning per la musica."
+  - "4 articoli con revisione paritaria tra machine learning e musicologia."
+  - "Ho insegnato Sistemi Operativi, Principi di Logica e Introduzione alla Scienza dei Dati a più di 80 studenti all'Università dell'Avana."
 
 # ------------------------------------------------------------------
 #  EDUCATION

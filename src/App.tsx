@@ -1,4 +1,5 @@
 import { MotionConfig } from "motion/react";
+import { ContourBackground } from "./components/ContourLines";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { HighlightBar } from "./components/HighlightBar";
@@ -45,9 +46,10 @@ function Page() {
         >
           {t.skipToContent}
         </a>
+        <ContourBackground />
         <Nav items={nav} />
         <Hero />
-        <main className="mx-auto max-w-6xl px-4 sm:px-8">
+        <main className="mx-auto max-w-[78rem] px-4 sm:px-8">
           <Experience />
           <Projects />
           {cv.publications.length > 0 && <Publications />}
