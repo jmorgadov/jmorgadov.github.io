@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import { AUTHOR_NAME, cv, formatYears, splitTitle, type Role } from "../data";
+import { AUTHOR_NAME, formatYears, splitTitle, type Role } from "../data";
+import { useLang } from "../i18n";
 import { ChipList } from "./Chip";
 import { Highlightable } from "./Highlightable";
 import { ExternalIcon } from "./Icons";
@@ -32,8 +33,9 @@ function Place({ institution, location }: { institution: string; location: strin
 }
 
 export function Experience() {
+  const { cv, t } = useLang();
   return (
-    <Section id="experience" title="Experience">
+    <Section id="experience" title={t.sections.experience}>
       <ol className="relative space-y-4 before:absolute before:top-3 before:bottom-3 before:left-[7px] before:w-px before:bg-line">
         {cv.experience.map((role) => (
           <li key={`${role.title}-${role.institution}`} className="relative pl-9">
@@ -42,14 +44,14 @@ export function Experience() {
               className="absolute top-[1.85rem] left-0 size-[15px] rounded-full border-2 border-accent bg-paper"
             />
             <Highlightable skills={role.skills} className="p-4 sm:p-5">
-              <Years>{formatYears(role.start_year, role.end_year)}</Years>
+              <Years>{formatYears(role.start_year, role.end_year, t.present)}</Years>
               <h3 className="mt-1 font-display text-2xl font-semibold tracking-tight">
                 {role.title}
               </h3>
               <Place institution={role.institution} location={role.location} />
               <Highlights items={role.highlights} />
               <div className="mt-4">
-                <ChipList skills={role.skills} label={`Skills used as ${role.title}`} />
+                <ChipList skills={role.skills} label={t.skillsUsedAs(role.title)} />
               </div>
             </Highlightable>
           </li>
@@ -60,20 +62,15 @@ export function Experience() {
 }
 
 export function Projects() {
+  const { cv, t } = useLang();
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" title={t.sections.projects}>
       <div className="grid gap-4 lg:grid-cols-2">
         {cv.projects.map((project) => {
-          const [name, subtitle] = splitTitle(project.title);
+          // The title's subtitle repeats the description, which says more.
+          const [name] = splitTitle(project.title);
           const heading = (
-            <>
-              <span className="block font-display text-3xl font-bold tracking-tight">{name}</span>
-              {subtitle && (
-                <span className="mt-1 block font-display text-lg font-medium text-ink-2">
-                  {subtitle}
-                </span>
-              )}
-            </>
+            <span className="block font-display text-3xl font-bold tracking-tight">{name}</span>
           );
           return (
             <Highlightable
@@ -82,7 +79,7 @@ export function Projects() {
               className="group flex flex-col border border-line p-5 transition-[border-color,transform] duration-300 hover:-translate-y-1 hover:border-ink/40 sm:p-6"
             >
               <div className="flex items-center justify-between gap-3">
-                <Years>{formatYears(project.start_year, project.end_year)}</Years>
+                <Years>{formatYears(project.start_year, project.end_year, t.present)}</Years>
                 {project.link && (
                   <ExternalIcon className="size-5 text-ink-3 transition-[color,transform] duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
                 )}
@@ -104,7 +101,7 @@ export function Projects() {
               <p className="mt-3">{project.description}</p>
               <Highlights items={project.highlights} />
               <div className="relative z-10 mt-auto pt-5">
-                <ChipList skills={project.skills} label={`Skills used in ${name}`} />
+                <ChipList skills={project.skills} label={t.skillsUsedIn(name)} />
               </div>
             </Highlightable>
           );
@@ -129,17 +126,16 @@ function Authors({ list }: { list: string }) {
 }
 
 export function Publications() {
+  const { cv, t } = useLang();
   const pubs = [...cv.publications, ...(cv.preprints ?? [])];
   const citations = pubs.reduce((sum, p) => sum + (p.citations ?? 0), 0);
   return (
     <Section
       id="publications"
-      title="Publications"
+      title={t.sections.publications}
       aside={
         <>
-          <p>
-            {pubs.length} papers, cited {citations} times.
-          </p>
+          <p>{t.papersCited(pubs.length, citations)}</p>
           {cv.socials.googlescholar && (
             <a
               href={cv.socials.googlescholar}
@@ -147,7 +143,7 @@ export function Publications() {
               rel="noreferrer"
               className="mt-1 inline-flex items-center gap-1 font-display text-sm text-accent hover:underline"
             >
-              Google Scholar profile
+              {t.scholarProfile}
               <ExternalIcon className="size-3.5" />
             </a>
           )}
@@ -183,7 +179,7 @@ export function Publications() {
                 <Authors list={pub.coauthors} />
                 {!!pub.citations && (
                   <span className="shrink-0 rounded-full bg-accent-soft px-2.5 py-0.5 font-display text-xs font-medium text-accent">
-                    Cited by {pub.citations}
+                    {t.citedBy(pub.citations)}
                   </span>
                 )}
               </div>
@@ -196,12 +192,9 @@ export function Publications() {
 }
 
 export function Skills() {
+  const { cv, t } = useLang();
   return (
-    <Section
-      id="skills"
-      title="Skills"
-      aside={<p>Select a skill to highlight the roles and projects where I used it.</p>}
-    >
+    <Section id="skills" title={t.sections.skills} aside={<p>{t.skillsHint}</p>}>
       <dl className="space-y-7">
         {Object.entries(cv.skills).map(([group, skills]) => (
           <div key={group} className="grid gap-x-6 gap-y-2 sm:grid-cols-[11rem_minmax(0,1fr)]">
@@ -217,17 +210,18 @@ export function Skills() {
 }
 
 export function Education() {
+  const { cv, t } = useLang();
   return (
-    <Section id="education" title="Education">
+    <Section id="education" title={t.sections.education}>
       <ol className="space-y-8">
         {cv.education.map((ed) => (
           <li key={ed.degree}>
-            <Years>{formatYears(ed.start_year, ed.end_year)}</Years>
+            <Years>{formatYears(ed.start_year, ed.end_year, t.present)}</Years>
             <h3 className="mt-1 font-display text-2xl font-semibold tracking-tight">{ed.degree}</h3>
             <Place institution={ed.institution} location={ed.location} />
             {ed.thesis_title && (
               <p className="mt-2 text-ink-2">
-                Thesis: <cite>{ed.thesis_title}</cite>
+                {t.thesis} <cite>{ed.thesis_title}</cite>
               </p>
             )}
           </li>
@@ -238,8 +232,9 @@ export function Education() {
 }
 
 export function Awards() {
+  const { cv, t } = useLang();
   return (
-    <Section id="awards" title="Awards">
+    <Section id="awards" title={t.sections.awards}>
       <ol className="divide-y divide-line">
         {cv.awards.map((award) => (
           <li
@@ -264,9 +259,10 @@ export function Awards() {
 }
 
 function CompactRole({ role }: { role: Role }) {
+  const { t } = useLang();
   return (
     <li>
-      <Years>{formatYears(role.start_year, role.end_year)}</Years>
+      <Years>{formatYears(role.start_year, role.end_year, t.present)}</Years>
       <h4 className="font-display text-lg font-semibold">{role.title}</h4>
       <p className="font-display text-sm text-ink-2">{role.institution}</p>
       <Highlights items={role.highlights} />
@@ -275,15 +271,16 @@ function CompactRole({ role }: { role: Role }) {
 }
 
 export function Teaching() {
+  const { cv, t } = useLang();
   const courses = cv.courses_taught ?? [];
   const roles = cv.vocational ?? [];
   if (!courses.length && !roles.length) return null;
   return (
-    <Section id="teaching" title="Teaching & early research">
+    <Section id="teaching" title={t.sections.teaching}>
       <div className="grid gap-12 lg:grid-cols-2">
         {courses.length > 0 && (
           <div>
-            <h3 className="font-display text-xl font-semibold text-accent">Courses taught</h3>
+            <h3 className="font-display text-xl font-semibold text-accent">{t.coursesTaught}</h3>
             <ul className="mt-4 space-y-5">
               {courses.map((c) => (
                 <li key={c.title}>
@@ -305,7 +302,7 @@ export function Teaching() {
         {roles.length > 0 && (
           <div>
             <h3 className="font-display text-xl font-semibold text-accent">
-              Research and teaching assistant roles
+              {t.assistantRoles}
             </h3>
             <ul className="mt-4 space-y-5">
               {roles.map((r) => (
@@ -320,9 +317,10 @@ export function Teaching() {
 }
 
 export function Languages() {
+  const { cv, t } = useLang();
   const langs = Object.values(cv.languages);
   return (
-    <Section id="languages" title="Languages">
+    <Section id="languages" title={t.sections.languages}>
       <ul className="grid gap-6 sm:grid-cols-3">
         {langs.map((lang) => (
           <li key={lang.name}>
@@ -332,19 +330,7 @@ export function Languages() {
                 {lang.level_cefr}
               </span>
             </div>
-            <div
-              className="mt-2 flex gap-1"
-              role="img"
-              aria-label={`${lang.score} out of 5`}
-            >
-              {Array.from({ length: 5 }, (_, i) => (
-                <span
-                  key={i}
-                  className={`h-1.5 flex-1 rounded-full ${i < lang.score ? "bg-accent" : "bg-line"}`}
-                />
-              ))}
-            </div>
-            <p className="mt-2 font-display text-sm text-ink-2">{lang.level}</p>
+            <p className="mt-1 font-display text-sm text-ink-2">{lang.level}</p>
           </li>
         ))}
       </ul>

@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#3346D3"/>
-  <text x="32" y="43" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#F3F4F1" letter-spacing="-1">JM</text>
+  <rect width="64" height="64" rx="14" fill="#0C6F86"/>
+  <!-- J and M share a stroke: the M's first stem drops into the J's hook. -->
+  <path d="M47.5 41V17l-10 16-10-16v24a7 7 0 0 1-14 0" fill="none" stroke="#F3F4F1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

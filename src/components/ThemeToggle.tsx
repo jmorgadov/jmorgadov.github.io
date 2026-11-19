@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { useLang } from "../i18n";
 import { MoonIcon, SunIcon } from "./Icons";
 
 type Theme = "light" | "dark";
@@ -14,6 +15,7 @@ function readStored(): Theme | null {
 }
 
 export function ThemeToggle() {
+  const { t } = useLang();
   const [theme, setTheme] = useState<Theme>(
     () => (document.documentElement.dataset.theme as Theme | undefined) ?? "light",
   );
@@ -44,8 +46,8 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      aria-label={`Switch to ${next} theme`}
-      title={`Switch to ${next} theme`}
+      aria-label={t.switchTheme(next)}
+      title={t.switchTheme(next)}
       className="grid size-9 place-items-center overflow-hidden rounded-full text-ink-2 transition-colors hover:bg-paper-2 hover:text-ink"
     >
       <AnimatePresence mode="wait" initial={false}>

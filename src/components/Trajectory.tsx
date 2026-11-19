@@ -35,7 +35,7 @@ export function Trajectory({ className }: { className?: string }) {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let width = 0;
     let height = 0;
-    let accent = "#3346d3";
+    let accent = "#0c6f86";
     let points: Point[] = [];
     let vx = 0;
     let vy = 0;

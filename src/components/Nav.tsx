@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { displayName } from "../data";
-import { DownloadIcon } from "./Icons";
+import { useLang } from "../i18n";
+import { DownloadIcon, MonogramIcon } from "./Icons";
+import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
 
 export interface NavItem {
@@ -28,6 +30,7 @@ function useActiveSection(ids: string[]): string | null {
 }
 
 export function Nav({ items }: { items: NavItem[] }) {
+  const { t } = useLang();
   const active = useActiveSection(items.map((i) => i.id));
   const [scrolled, setScrolled] = useState(false);
   const listRef = useRef<HTMLUListElement>(null);
@@ -50,7 +53,7 @@ export function Nav({ items }: { items: NavItem[] }) {
 
   return (
     <nav
-      aria-label="Sections"
+      aria-label={t.sectionsNav}
       className={`fixed inset-x-0 top-0 z-40 transition-[background-color,box-shadow,backdrop-filter] duration-300 ${
         scrolled
           ? "bg-paper/80 shadow-[0_1px_0_var(--line)] backdrop-blur-md"
@@ -60,10 +63,11 @@ export function Nav({ items }: { items: NavItem[] }) {
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-8">
         <a
           href="#top"
+          aria-label={t.backToTop(displayName)}
           className="flex shrink-0 items-center gap-2.5 font-display font-semibold tracking-tight"
         >
-          <span className="grid size-8 place-items-center rounded-lg bg-accent text-sm font-bold text-accent-ink">
-            JM
+          <span className="size-8 rounded-lg bg-accent text-accent-ink">
+            <MonogramIcon className="block size-full" />
           </span>
           <motion.span
             className="hidden lg:inline"
@@ -104,14 +108,15 @@ export function Nav({ items }: { items: NavItem[] }) {
             <a
               href="/cv.pdf"
               download
-              aria-label="Download CV"
-              title="Download CV"
+              aria-label={t.downloadCv}
+              title={t.downloadCv}
               className="grid size-9 place-items-center rounded-full text-ink-2 transition-colors hover:bg-paper-2 hover:text-ink sm:flex sm:w-auto sm:gap-1.5 sm:px-3 sm:font-display sm:text-sm"
             >
               <DownloadIcon className="size-4.5" />
               <span className="hidden sm:inline">CV</span>
             </a>
           )}
+          <LanguageSwitch />
           <ThemeToggle />
         </div>
       </div>

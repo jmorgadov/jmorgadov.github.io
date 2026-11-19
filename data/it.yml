@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------
 #  LANGUAGE
 # ------------------------------------------------------------------
-lang: en
+lang: it
 
 # ------------------------------------------------------------------
 #  PERSONAL
@@ -12,11 +12,11 @@ personal:
   user_name: jmorgadov
   email: jorge.morgadov@gmail.com
   phone: +39 3517621143
-  location: L'Aquila, Italy
-  slogan: Software Engineer · Full-Stack & ML
+  location: L'Aquila, Italia
+  slogan: Ingegnere del software · Full-Stack & ML
   # website:
-  shortbio: Developer of scientific and open-source software with full-stack experience
-    building web and mobile apps.
+  shortbio: Sviluppatore di software scientifico e open source, con esperienza
+    full-stack nella realizzazione di app web e mobile.
 
 # ------------------------------------------------------------------
 #  SOCIALS
@@ -30,21 +30,42 @@ socials:
   orcid: https://orcid.org/0000-0001-6067-9172
 
 # ------------------------------------------------------------------
+#  HIGHLIGHTS (short, standalone lines shown in the website hero)
+# ------------------------------------------------------------------
+highlights:
+  - Dottorando e ricercatore al GSSI, tra machine learning per la musica ed
+    embedding musicali basati su LLM.
+  - Sviluppatore full-stack della piattaforma Laudare, che riunisce manoscritti,
+    testi e musica delle laude italiane.
+  - Sto sviluppando Crescia, una piattaforma di preparazione al TOEFL che valuta
+    scrittura e parlato con l'IA.
+  - Core developer di yupi, un framework Python open source per l'analisi di dati
+    di traiettorie.
+  - Ho creato pactus per classificare traiettorie con modelli che vanno da Random
+    Forest ai Transformer.
+  - Pubblicazioni su Environmental Modelling & Software, AI Open e Journal of Open
+    Source Software.
+  - Quattro anni di sviluppo dell'app principale in Flutter e Unity di EducUp.
+  - Docente di Sistemi Operativi per 80 studenti di Informatica all'Università
+    dell'Avana.
+  - Laureato all'Università dell'Avana con il Premio al Merito Scientifico.
+
+# ------------------------------------------------------------------
 #  EDUCATION
 # ------------------------------------------------------------------
 education:
-  - degree: PhD in Computer Science
+  - degree: Dottorato in Informatica
     start_year: 2023
     end_year: present
     institution: Gran Sasso Science Institute
-    location: L'Aquila, Italy
+    location: L'Aquila, Italia
     thesis_title: ''
     exams: 8
-  - degree: Degree in Computer Science
+  - degree: Laurea in Informatica
     start_year: 2017
     end_year: 2022
-    institution: University of Havana
-    location: Havana, Cuba
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
     thesis_title: 'yupi: Plataforma para la generación, seguimiento y análisis de
       trayectorias'
     exams: 48
@@ -53,15 +74,16 @@ education:
 #  EXPERIENCE
 # ------------------------------------------------------------------
 experience:
-  - title: Researcher | PhD candidate
+  - title: Ricercatore | Dottorando
     start_year: 2023
     end_year: present
     institution: Gran Sasso Science Institute
-    location: L'Aquila, Italy
+    location: L'Aquila, Italia
     highlights:
-      - Research on machine learning for music, including LLM-based music embeddings
-      - 2 peer-reviewed papers published, 1 more under review
-      - Full-stack developer of the web research platform of the Laudare Project
+      - Ricerca sul machine learning per la musica, inclusi embedding musicali basati
+        su LLM
+      - 2 articoli pubblicati con revisione paritaria, 1 in fase di revisione
+      - Sviluppatore full-stack della piattaforma web di ricerca del Progetto Laudare
     skills:
       - Python
       - PyTorch
@@ -71,15 +93,17 @@ experience:
       - React
       - Docker
       - PostgreSQL
-  - title: Junior Professor & Researcher
+  - title: Professore junior e ricercatore
     start_year: 2022
     end_year: 2023
-    institution: University of Havana
-    location: Havana, Cuba
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
     highlights:
-      - Lectured Operating Systems, Logic Principles and Introduction to Data Science
-      - Researched trajectory and human mobility analysis at the School of Physics
-      - Applied AI and machine learning to trajectory classification
+      - Docente di Sistemi Operativi, Principi di Logica e Introduzione alla Scienza
+        dei Dati
+      - Ricerca sull'analisi di traiettorie e della mobilità umana presso la Facoltà
+        di Fisica
+      - Applicazione di IA e machine learning alla classificazione di traiettorie
     skills:
       - Python
       - TensorFlow
@@ -88,14 +112,15 @@ experience:
       - NumPy
       - Jupyter
       - C
-  - title: Software Developer
+  - title: Sviluppatore software
     start_year: 2019
     end_year: 2023
     institution: EducUp
-    location: Havana, Cuba
+    location: L'Avana, Cuba
     highlights:
-      - Proposed and implemented several of the main features of the product
-      - Developed and maintained the company's main app (Flutter, Unity) and web services
+      - Ho proposto e implementato diverse funzionalità principali del prodotto
+      - Sviluppo e manutenzione dell'app principale dell'azienda (Flutter, Unity) e
+        dei servizi web
     skills:
       - Flutter
       - Dart
@@ -127,7 +152,7 @@ publications:
     venue: Environmental Modelling & Software 163, 105679, 2023
     citations: 6
     coauthors: A Reyes, G Viera-López, JJ Morgado-Vega, E Altshuler
-    link: 
+    link:
       https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u5HHmVD_uO8C
   - title: 'pactus: A Python framework for trajectory classification'
     year: 2023
@@ -135,7 +160,7 @@ publications:
     citations: 4
     coauthors: G Viera-López, JJ Morgado-Vega, A Reyes, E Altshuler, Y Almeida-Cruz,
       ...
-    link: 
+    link:
       https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u-x6o8ySG0sC
 
 preprints: []
@@ -144,8 +169,8 @@ events:
   - name: Taller Inteligencia Artificial, Ciencia de Datos y Aplicaciones Criptográficas
     year: 2017
     link: https://handsonresearch.org/
-    institution: University of Havana
-    location: Havana, Cuba
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
 
 # ------------------------------------------------------------------
 #  STUDENTS
@@ -156,80 +181,80 @@ students: []
 #  VOCATIONAL
 # ------------------------------------------------------------------
 vocational:
-  - title: Assistant Researcher
+  - title: Assistente di ricerca
     start_year: 2017
     end_year: 2022
-    institution: Group of Complex Systems and Statistical Physics, School of Physics,
-      University of Havana
-    location: Havana, Cuba
+    institution: Gruppo di Sistemi Complessi e Fisica Statistica, Facoltà di Fisica,
+      Università dell'Avana
+    location: L'Avana, Cuba
     highlights:
-      - Involved in research on Granular Matter, Group Behavior Analysis
-        and Human Mobility Analysis
-  - title: Assistant Researcher
+      - Ricerca su materia granulare, analisi del comportamento di gruppo e analisi
+        della mobilità umana
+  - title: Assistente di ricerca
     start_year: 2020
     end_year: 2022
-    institution: Artificial Intelligence Group, School of Math and Computer Science,
-      University of Havana
-    location: Havana, Cuba
+    institution: Gruppo di Intelligenza Artificiale, Facoltà di Matematica e
+      Informatica, Università dell'Avana
+    location: L'Avana, Cuba
     highlights:
-      - Involved in research on Artificial Intelligence applied in Sport Events
-        Prediction
-  - title: Assistant Professor
+      - Ricerca sull'intelligenza artificiale applicata alla previsione di eventi
+        sportivi
+  - title: Assistente alla didattica
     start_year: 2018
     end_year: 2019
-    institution: School of Math and Computer Science, University of Havana
-    location: Havana, Cuba
+    institution: Facoltà di Matematica e Informatica, Università dell'Avana
+    location: L'Avana, Cuba
     highlights:
-      - Assisted practical classes of Introduction to Programming
+      - Assistenza nelle esercitazioni di Introduzione alla Programmazione
 
 # ------------------------------------------------------------------
 #  COURSES TAUGHT
 # ------------------------------------------------------------------
 courses_taught:
-  - title: Logic principles
-    program: Bachelor program in Data Science
+  - title: Principi di logica
+    program: Corso di laurea in Scienza dei Dati
     dates:
       - 2022-2023
-    institution: University of Havana
+    institution: Università dell'Avana
     location: Cuba
     highlights:
-      - Practical classes for 21 students
-  - title: Introduction to Data Science
-    program: Bachelor program in Data Science
+      - Esercitazioni per 21 studenti
+  - title: Introduzione alla Scienza dei Dati
+    program: Corso di laurea in Scienza dei Dati
     dates:
       - 2022-2023
-    institution: University of Havana
+    institution: Università dell'Avana
     location: Cuba
     highlights:
-      - Practical classes for 21 students
-  - title: Operating Systems
-    program: Bachelor program in Computer Science
+      - Esercitazioni per 21 studenti
+  - title: Sistemi Operativi
+    program: Corso di laurea in Informatica
     dates:
       - 2022-2023
-    institution: University of Havana
+    institution: Università dell'Avana
     location: Cuba
     highlights:
-      - Lectures for 80 students
+      - Lezioni per 80 studenti
 
 # ------------------------------------------------------------------
 #  LANGUAGES
 # ------------------------------------------------------------------
 languages:
   es:
-    name: Spanish
-    level: Native Proficiency
+    name: Spagnolo
+    level: Madrelingua
     level_cefr: C2
     score: 5
     flag: es
   en:
-    name: English
-    level: Professional Proficiency
+    name: Inglese
+    level: Competenza professionale
     level_cefr: C1
     score: 5
     flag: gb
   it:
-    name: Italian
-    level: Professional Proficiency
+    name: Italiano
+    level: Competenza professionale
     level_cefr: B1
     score: 4
     flag: it
@@ -238,80 +263,90 @@ languages:
 #  PROJECTS
 # ------------------------------------------------------------------
 projects:
-  - title: 'Laudare Platform: Research platform for the Italian lauda repertoire'
+  - title: 'Piattaforma Laudare: Piattaforma di ricerca per il repertorio della lauda
+      italiana'
     start_year: 2024
     end_year: present
-    description: Web platform to explore and research the Italian laude database of
-      the Laudare Project.
+    description: Piattaforma web per esplorare e studiare il database delle laude
+      italiane del Progetto Laudare.
     highlights:
-      - Unified access to manuscripts, texts and music of each lauda
-      - Efficient IIIF viewer for high-resolution manuscript images
-      - Music playback synchronized with the lauda texts
+      - Accesso unificato a manoscritti, testi e musica di ogni lauda
+      - Visualizzatore IIIF efficiente per immagini ad alta risoluzione dei manoscritti
+      - Riproduzione musicale sincronizzata con i testi delle laude
     skills:
       - Django
       - React
       - Docker
       - IIIF
-  - title: 'Crescia: TOEFL practice platform'
+  - title: 'Crescia: Piattaforma di preparazione al TOEFL'
     start_year: 2025
     end_year: present
     link: https://www.crescialearn.com
-    description: TOEFL practice platform for students, currently in development as
-      a personal project.
+    description: Piattaforma di preparazione al TOEFL per studenti, attualmente in
+      sviluppo come progetto personale.
     highlights:
-      - Automatic evaluation of written answers with modern LLMs
-      - Speaking assessment powered by AI audio models
+      - Valutazione automatica delle risposte scritte con LLM moderni
+      - Valutazione del parlato basata su modelli audio di IA
     skills:
       - Django
       - React
+      - PostgreSQL
       - Docker
+      - AWS
+      - Terraform
+      - CI/CD
       - LLMs
-  - title: 'pulse: Logic circuit simulator app'
+  - title: 'pulse: App per simulare circuiti logici'
     start_year: 2025
     end_year: 2025
     link: https://github.com/jmorgadov/pulse
-    description: Cross-platform app to design and simulate logic circuits, built as
-      a personal prototype.
+    description: App multipiattaforma per progettare e simulare circuiti logici,
+      realizzata come prototipo personale.
     highlights:
-      - Build circuits from logic gates and reuse them as custom components
-      - Watch circuits run in real time and look inside any component while simulating
-      - Responsive interface even with several simulations running at once
+      - Costruisci circuiti a partire da porte logiche e riutilizzali come componenti
+        personalizzati
+      - Osserva i circuiti in tempo reale ed esamina l'interno di qualsiasi componente
+        durante la simulazione
+      - Interfaccia reattiva anche con più simulazioni in esecuzione
     skills:
       - Flutter
       - Dart
-  - title: 'yupi: Open Source Framework for Trajectory Data Analysis'
+  - title: "yupi: Framework open source per l'analisi di dati di traiettorie"
     start_year: 2020
     end_year: present
     link: https://github.com/yupidevs/yupi
-    description: Python library for trajectory data generation, tracking and analysis.
+    description: Libreria Python per la generazione, il tracciamento e l'analisi di
+      dati di traiettorie.
     highlights:
-      - Conceptualized the unified trajectory data model of the library
-      - Develop and maintain several core modules
+      - Ho ideato il modello unificato di dati di traiettoria della libreria
+      - Sviluppo e manutenzione di diversi moduli principali
     skills:
       - Python
       - Testing
       - CI/CD
-  - title: 'pactus: Open Source Framework for Trajectory Classification'
+  - title: 'pactus: Framework open source per la classificazione di traiettorie'
     start_year: 2022
     end_year: 2023
     link: https://github.com/yupidevs/pactus
-    description: Python framework for trajectory classification.
+    description: Framework Python per la classificazione di traiettorie.
     highlights:
-      - Implemented classifiers from Random Forest and XGBoost to LSTM and Transformers
-      - Core developer and maintainer
+      - Implementazione di classificatori da Random Forest e XGBoost fino a LSTM e
+        Transformer
+      - Core developer e maintainer
     skills:
       - Python
       - TensorFlow
       - Testing
-  - title: 'yuca: CLI tool for fast personal data processing and visualization'
+  - title: "yuca: Strumento CLI per l'elaborazione e la visualizzazione rapida di dati
+      personali"
     start_year: 2023
     end_year: 2024
     link: https://github.com/yuca-devs/yuca
-    description: CLI tool that generates documents such as CVs from personal data
-      and reusable templates.
+    description: Strumento CLI che genera documenti come CV a partire da dati
+      personali e modelli riutilizzabili.
     highlights:
-      - Core developer and maintainer
-      - Recipe system with per-document filters and overrides
+      - Core developer e maintainer
+      - Sistema di ricette con filtri e personalizzazioni per ogni documento
     skills:
       - Python
       - Jinja2
@@ -320,7 +355,7 @@ projects:
 #  EVENTS
 # ------------------------------------------------------------------
 skills:
-  Programming:
+  Programmazione:
     - Python
     - TypeScript/JavaScript
     - SQL
@@ -329,7 +364,7 @@ skills:
     - Rust
     - C#
     - C
-  AI Engineering:
+  Ingegneria dell'IA:
     - Agentic Programming
     - LLM integration
     - OpenAI & Anthropic APIs
@@ -349,6 +384,7 @@ skills:
     - Celery
     - Docker
     - AWS
+    - Terraform
     - Nginx
     - CI/CD
     - GitHub Actions
@@ -364,7 +400,7 @@ skills:
     - Riverpod
     - Unity 3D
     - HTML/CSS
-  Machine Learning & Data:
+  Machine Learning e dati:
     - PyTorch
     - TensorFlow
     - scikit-learn
@@ -389,36 +425,36 @@ stats:
 #  AWARDS
 # ------------------------------------------------------------------
 awards:
-  - name: Fully funded scholarship for PhD studies
-    description: in the Gran Sasso Science Institute
+  - name: Borsa di studio completa per il dottorato
+    description: presso il Gran Sasso Science Institute
     year: 2023
     institution: GSSI
-    location: L'Aquila, Italy
-  - name: Graduated with the Scientific Merit Award
+    location: L'Aquila, Italia
+  - name: Laurea con il Premio al Merito Scientifico
     description: ''
     year: 2022
-    institution: University of Havana
-    location: Havana, Cuba
-  - name: Mention at the University of Havana Scientific Forum
-    description: 'for the project: yupi: Plataforma para la generación, seguimiento
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
+  - name: Menzione al Forum Scientifico dell'Università dell'Avana
+    description: 'per il progetto: yupi: Plataforma para la generación, seguimiento
       y análisis de trayectorias'
     year: 2022
-    institution: University of Havana
-    location: Havana, Cuba
-  - name: Silver medal at the Scientific Student Event
-    description: 'for the project: yupi: Plataforma para la generación, seguimiento
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
+  - name: Medaglia d'argento all'Evento Scientifico Studentesco
+    description: 'per il progetto: yupi: Plataforma para la generación, seguimiento
       y análisis de trayectorias'
     year: 2022
-    institution: University of Havana
-    location: Havana, Cuba
-  - name: Gold medal at the Scientific Student Event
-    description: 'for the project: Introducción a la simulación de medios granulares'
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
+  - name: Medaglia d'oro all'Evento Scientifico Studentesco
+    description: 'per il progetto: Introducción a la simulación de medios granulares'
     year: 2021
-    institution: University of Havana
-    location: Havana, Cuba
-  - name: Bronze medal at the Scientific Student Event
-    description: 'for the project: Lista enlazada piramidal, propuesta de una estructura
-      de datos'
+    institution: Università dell'Avana
+    location: L'Avana, Cuba
+  - name: Medaglia di bronzo all'Evento Scientifico Studentesco
+    description: 'per il progetto: Lista enlazada piramidal, propuesta de una
+      estructura de datos'
     year: 2019
-    institution: University of Havana
-    location: Havana, Cuba
+    institution: Università dell'Avana
+    location: L'Avana, Cuba

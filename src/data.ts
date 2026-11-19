@@ -1,4 +1,6 @@
-import raw from "../en.yml";
+import en from "../data/en.yml";
+import es from "../data/es.yml";
+import it from "../data/it.yml";
 
 export type Year = number | "present";
 
@@ -77,6 +79,7 @@ export interface Language {
 
 export interface CV {
   personal: Personal;
+  highlights?: string[];
   socials: Partial<Record<"linkedin" | "twitter" | "github" | "googlescholar" | "orcid", string>>;
   education: Education[];
   experience: Role[];
@@ -90,7 +93,16 @@ export interface CV {
   languages: Record<string, Language>;
 }
 
-export const cv = raw as CV;
+export const LANGS = ["en", "it", "es"] as const;
+export type Lang = (typeof LANGS)[number];
+
+export const cvs: Record<Lang, CV> = { en: en as CV, it: it as CV, es: es as CV };
+
+/**
+ * The English data, for what every language shares: names, links and skill
+ * tags. Translated content comes from `useLang().cv`.
+ */
+export const cv = cvs.en;
 
 /** Name shown in the hero and nav. */
 export const displayName = `${cv.personal.name.split(" ")[0]} ${cv.personal.last_name}`;
@@ -100,8 +112,8 @@ export const fullName = `${cv.personal.name} ${cv.personal.last_name}`;
 /** How the owner's name appears in coauthor lists. */
 export const AUTHOR_NAME = "JJ Morgado-Vega";
 
-export function formatYears(start: Year, end: Year): string {
-  const fmt = (y: Year) => (y === "present" ? "Present" : String(y));
+export function formatYears(start: Year, end: Year, present = "Present"): string {
+  const fmt = (y: Year) => (y === "present" ? present : String(y));
   return start === end ? fmt(start) : `${fmt(start)}–${fmt(end)}`;
 }
 

@@ -1,0 +1,462 @@
+# ------------------------------------------------------------------
+#  LANGUAGE
+# ------------------------------------------------------------------
+lang: es
+
+# ------------------------------------------------------------------
+#  PERSONAL
+# ------------------------------------------------------------------
+personal:
+  name: Jorge Junior
+  last_name: Morgado Vega
+  user_name: jmorgadov
+  email: jorge.morgadov@gmail.com
+  phone: +39 3517621143
+  location: L'Aquila, Italia
+  slogan: Ingeniero de software · Full-Stack y ML
+  # website:
+  shortbio: Desarrollador de software científico y de código abierto, con
+    experiencia full-stack creando aplicaciones web y móviles.
+
+# ------------------------------------------------------------------
+#  SOCIALS
+# ------------------------------------------------------------------
+socials:
+  linkedin: https://www.linkedin.com/in/jmorgadov/
+  twitter: https://twitter.com/morgado305
+  github: https://github.com/jmorgadov
+  googlescholar: https://scholar.google.com/citations?user=JUoHOqQAAAAJ
+  # googlescholar: https://scholar.google.com/citations?user=TJzM0BkAAAAJ
+  orcid: https://orcid.org/0000-0001-6067-9172
+
+# ------------------------------------------------------------------
+#  HIGHLIGHTS (short, standalone lines shown in the website hero)
+# ------------------------------------------------------------------
+highlights:
+  - Investigador y doctorando en el GSSI, trabajando en machine learning para la
+    música y embeddings musicales basados en LLM.
+  - Desarrollador full-stack de la plataforma Laudare, que reúne manuscritos,
+    textos y música de las laude italianas.
+  - Desarrollando Crescia, una plataforma de práctica para el TOEFL que evalúa la
+    escritura y la expresión oral con IA.
+  - Desarrollador principal de yupi, un framework de Python de código abierto para
+    el análisis de datos de trayectorias.
+  - Creé pactus para clasificar trayectorias con modelos que van desde Random
+    Forest hasta Transformers.
+  - Publicaciones en Environmental Modelling & Software, AI Open y Journal of Open
+    Source Software.
+  - Cuatro años desarrollando la app principal de EducUp en Flutter y Unity.
+  - Impartí Sistemas Operativos a 80 estudiantes de Ciencia de la Computación en la
+    Universidad de La Habana.
+  - Graduado de la Universidad de La Habana con el Premio al Mérito Científico.
+
+# ------------------------------------------------------------------
+#  EDUCATION
+# ------------------------------------------------------------------
+education:
+  - degree: Doctorado en Ciencias de la Computación
+    start_year: 2023
+    end_year: present
+    institution: Gran Sasso Science Institute
+    location: L'Aquila, Italia
+    thesis_title: ''
+    exams: 8
+  - degree: Licenciatura en Ciencia de la Computación
+    start_year: 2017
+    end_year: 2022
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+    thesis_title: 'yupi: Plataforma para la generación, seguimiento y análisis de
+      trayectorias'
+    exams: 48
+
+# ------------------------------------------------------------------
+#  EXPERIENCE
+# ------------------------------------------------------------------
+experience:
+  - title: Investigador | Doctorando
+    start_year: 2023
+    end_year: present
+    institution: Gran Sasso Science Institute
+    location: L'Aquila, Italia
+    highlights:
+      - Investigación en machine learning para la música, incluidos embeddings
+        musicales basados en LLM
+      - 2 artículos publicados con revisión por pares y 1 más en revisión
+      - Desarrollador full-stack de la plataforma web de investigación del Proyecto
+        Laudare
+    skills:
+      - Python
+      - PyTorch
+      - Hugging Face
+      - LLM integration
+      - Django
+      - React
+      - Docker
+      - PostgreSQL
+  - title: Profesor e investigador junior
+    start_year: 2022
+    end_year: 2023
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+    highlights:
+      - Impartí Sistemas Operativos, Principios de Lógica e Introducción a la Ciencia
+        de Datos
+      - Investigación en análisis de trayectorias y movilidad humana en la Facultad
+        de Física
+      - Aplicación de IA y machine learning a la clasificación de trayectorias
+    skills:
+      - Python
+      - TensorFlow
+      - scikit-learn
+      - Pandas
+      - NumPy
+      - Jupyter
+      - C
+  - title: Desarrollador de software
+    start_year: 2019
+    end_year: 2023
+    institution: EducUp
+    location: La Habana, Cuba
+    highlights:
+      - Propuse e implementé varias de las principales funcionalidades del producto
+      - Desarrollo y mantenimiento de la app principal de la empresa (Flutter, Unity)
+        y de sus servicios web
+    skills:
+      - Flutter
+      - Dart
+      - Unity 3D
+      - C#
+      - REST APIs
+
+# ------------------------------------------------------------------
+#  PUBLICATIONS
+# ------------------------------------------------------------------
+publications:
+  - title: 'Drafting the Landscape of Computational Musicology Tools: a Survey-Based
+      Approach'
+    year: 2025
+    venue: 12th International Conference on Digital Libraries for Musicology (DLfM),
+      2025
+    citations: 4
+    coauthors: JJ Morgado-Vega, S Sharma, F Simonetta
+    link: https://doi.org/10.1145/3748336.3748340
+  - title: 'Improving trajectory classification through Kramers-Moyal coefficients'
+    year: 2024
+    venue: AI Open 5, 87-93, 2024
+    citations: 0
+    coauthors: G Viera-López, JJ Morgado-Vega, A Reyes, E Altshuler, Y Almeida-Cruz,
+      G Manganini
+    link: https://doi.org/10.1016/j.aiopen.2024.06.001
+  - title: 'yupi: Generation, Tracking and Analysis of Trajectory data in Python'
+    year: 2023
+    venue: Environmental Modelling & Software 163, 105679, 2023
+    citations: 6
+    coauthors: A Reyes, G Viera-López, JJ Morgado-Vega, E Altshuler
+    link:
+      https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u5HHmVD_uO8C
+  - title: 'pactus: A Python framework for trajectory classification'
+    year: 2023
+    venue: Journal of Open Source Software 8 (89), 5738, 2023
+    citations: 4
+    coauthors: G Viera-López, JJ Morgado-Vega, A Reyes, E Altshuler, Y Almeida-Cruz,
+      ...
+    link:
+      https://scholar.google.com/citations?view_op=view_citation&hl=it&user=TJzM0BkAAAAJ&pagesize=100&citation_for_view=TJzM0BkAAAAJ:u-x6o8ySG0sC
+
+preprints: []
+
+events:
+  - name: Taller Inteligencia Artificial, Ciencia de Datos y Aplicaciones Criptográficas
+    year: 2017
+    link: https://handsonresearch.org/
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+
+# ------------------------------------------------------------------
+#  STUDENTS
+# ------------------------------------------------------------------
+students: []
+
+# ------------------------------------------------------------------
+#  VOCATIONAL
+# ------------------------------------------------------------------
+vocational:
+  - title: Alumno ayudante de investigación
+    start_year: 2017
+    end_year: 2022
+    institution: Grupo de Sistemas Complejos y Física Estadística, Facultad de Física,
+      Universidad de La Habana
+    location: La Habana, Cuba
+    highlights:
+      - Participación en investigaciones sobre materia granular, análisis del
+        comportamiento grupal y análisis de movilidad humana
+  - title: Alumno ayudante de investigación
+    start_year: 2020
+    end_year: 2022
+    institution: Grupo de Inteligencia Artificial, Facultad de Matemática y
+      Computación, Universidad de La Habana
+    location: La Habana, Cuba
+    highlights:
+      - Participación en investigaciones sobre inteligencia artificial aplicada a la
+        predicción de eventos deportivos
+  - title: Alumno ayudante
+    start_year: 2018
+    end_year: 2019
+    institution: Facultad de Matemática y Computación, Universidad de La Habana
+    location: La Habana, Cuba
+    highlights:
+      - Apoyo en las clases prácticas de Introducción a la Programación
+
+# ------------------------------------------------------------------
+#  COURSES TAUGHT
+# ------------------------------------------------------------------
+courses_taught:
+  - title: Principios de lógica
+    program: Licenciatura en Ciencia de Datos
+    dates:
+      - 2022-2023
+    institution: Universidad de La Habana
+    location: Cuba
+    highlights:
+      - Clases prácticas para 21 estudiantes
+  - title: Introducción a la Ciencia de Datos
+    program: Licenciatura en Ciencia de Datos
+    dates:
+      - 2022-2023
+    institution: Universidad de La Habana
+    location: Cuba
+    highlights:
+      - Clases prácticas para 21 estudiantes
+  - title: Sistemas Operativos
+    program: Licenciatura en Ciencia de la Computación
+    dates:
+      - 2022-2023
+    institution: Universidad de La Habana
+    location: Cuba
+    highlights:
+      - Conferencias para 80 estudiantes
+
+# ------------------------------------------------------------------
+#  LANGUAGES
+# ------------------------------------------------------------------
+languages:
+  es:
+    name: Español
+    level: Lengua materna
+    level_cefr: C2
+    score: 5
+    flag: es
+  en:
+    name: Inglés
+    level: Competencia profesional
+    level_cefr: C1
+    score: 5
+    flag: gb
+  it:
+    name: Italiano
+    level: Competencia profesional
+    level_cefr: B1
+    score: 4
+    flag: it
+
+# ------------------------------------------------------------------
+#  PROJECTS
+# ------------------------------------------------------------------
+projects:
+  - title: 'Plataforma Laudare: Plataforma de investigación sobre el repertorio de la
+      lauda italiana'
+    start_year: 2024
+    end_year: present
+    description: Plataforma web para explorar e investigar la base de datos de laude
+      italianas del Proyecto Laudare.
+    highlights:
+      - Acceso unificado a los manuscritos, textos y música de cada lauda
+      - Visor IIIF eficiente para imágenes de manuscritos en alta resolución
+      - Reproducción musical sincronizada con los textos de las laude
+    skills:
+      - Django
+      - React
+      - Docker
+      - IIIF
+  - title: 'Crescia: Plataforma de práctica para el TOEFL'
+    start_year: 2025
+    end_year: present
+    link: https://www.crescialearn.com
+    description: Plataforma de práctica para el TOEFL dirigida a estudiantes,
+      actualmente en desarrollo como proyecto personal.
+    highlights:
+      - Evaluación automática de respuestas escritas con LLMs modernos
+      - Evaluación de la expresión oral con modelos de audio de IA
+    skills:
+      - Django
+      - React
+      - PostgreSQL
+      - Docker
+      - AWS
+      - Terraform
+      - CI/CD
+      - LLMs
+  - title: 'pulse: App para simular circuitos lógicos'
+    start_year: 2025
+    end_year: 2025
+    link: https://github.com/jmorgadov/pulse
+    description: App multiplataforma para diseñar y simular circuitos lógicos,
+      creada como prototipo personal.
+    highlights:
+      - Construye circuitos a partir de compuertas lógicas y reutilízalos como
+        componentes propios
+      - Observa los circuitos en tiempo real y mira dentro de cualquier componente
+        mientras simulas
+      - Interfaz fluida incluso con varias simulaciones en ejecución a la vez
+    skills:
+      - Flutter
+      - Dart
+  - title: 'yupi: Framework de código abierto para el análisis de datos de
+      trayectorias'
+    start_year: 2020
+    end_year: present
+    link: https://github.com/yupidevs/yupi
+    description: Biblioteca de Python para la generación, el seguimiento y el
+      análisis de datos de trayectorias.
+    highlights:
+      - Concebí el modelo unificado de datos de trayectorias de la biblioteca
+      - Desarrollo y mantengo varios de los módulos principales
+    skills:
+      - Python
+      - Testing
+      - CI/CD
+  - title: 'pactus: Framework de código abierto para la clasificación de trayectorias'
+    start_year: 2022
+    end_year: 2023
+    link: https://github.com/yupidevs/pactus
+    description: Framework de Python para la clasificación de trayectorias.
+    highlights:
+      - Implementé clasificadores desde Random Forest y XGBoost hasta LSTM y
+        Transformers
+      - Desarrollador principal y mantenedor
+    skills:
+      - Python
+      - TensorFlow
+      - Testing
+  - title: 'yuca: Herramienta CLI para procesar y visualizar datos personales
+      rápidamente'
+    start_year: 2023
+    end_year: 2024
+    link: https://github.com/yuca-devs/yuca
+    description: Herramienta CLI que genera documentos, como CVs, a partir de datos
+      personales y plantillas reutilizables.
+    highlights:
+      - Desarrollador principal y mantenedor
+      - Sistema de recetas con filtros y ajustes propios para cada documento
+    skills:
+      - Python
+      - Jinja2
+
+# ------------------------------------------------------------------
+#  EVENTS
+# ------------------------------------------------------------------
+skills:
+  Programación:
+    - Python
+    - TypeScript/JavaScript
+    - SQL
+    - Bash
+    - Dart
+    - Rust
+    - C#
+    - C
+  Ingeniería de IA:
+    - Agentic Programming
+    - LLM integration
+    - OpenAI & Anthropic APIs
+    - AssemblyAI
+    - MCP
+    - AI agents
+    - Claude Code
+    - Codex
+  Backend y DevOps:
+    - Django
+    - Django REST Framework
+    - FastAPI
+    - Flask
+    - REST APIs
+    - PostgreSQL
+    - Redis
+    - Celery
+    - Docker
+    - AWS
+    - Terraform
+    - Nginx
+    - CI/CD
+    - GitHub Actions
+    - pytest
+    - PyPI packaging
+    - Git
+    - Linux
+  Frontend y móvil:
+    - React
+    - Vite
+    - Tailwind CSS
+    - Flutter
+    - Riverpod
+    - Unity 3D
+    - HTML/CSS
+  Machine Learning y datos:
+    - PyTorch
+    - TensorFlow
+    - scikit-learn
+    - Hugging Face
+    - Pandas
+    - NumPy
+    - Jupyter
+    - OpenCV
+    - Computer Vision
+
+
+# ------------------------------------------------------------------
+#  STATS
+# ------------------------------------------------------------------
+stats:
+  publications: 4
+  citations: 14
+  students: 0
+  courses_taught: 3
+
+# ------------------------------------------------------------------
+#  AWARDS
+# ------------------------------------------------------------------
+awards:
+  - name: Beca completa para estudios de doctorado
+    description: en el Gran Sasso Science Institute
+    year: 2023
+    institution: GSSI
+    location: L'Aquila, Italia
+  - name: Graduado con el Premio al Mérito Científico
+    description: ''
+    year: 2022
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+  - name: Mención en el Fórum Científico de la Universidad de La Habana
+    description: 'por el proyecto: yupi: Plataforma para la generación, seguimiento
+      y análisis de trayectorias'
+    year: 2022
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+  - name: Medalla de plata en el Evento Científico Estudiantil
+    description: 'por el proyecto: yupi: Plataforma para la generación, seguimiento
+      y análisis de trayectorias'
+    year: 2022
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+  - name: Medalla de oro en el Evento Científico Estudiantil
+    description: 'por el proyecto: Introducción a la simulación de medios granulares'
+    year: 2021
+    institution: Universidad de La Habana
+    location: La Habana, Cuba
+  - name: Medalla de bronce en el Evento Científico Estudiantil
+    description: 'por el proyecto: Lista enlazada piramidal, propuesta de una
+      estructura de datos'
+    year: 2019
+    institution: Universidad de La Habana
+    location: La Habana, Cuba

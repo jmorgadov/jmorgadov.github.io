@@ -10,8 +10,10 @@
   --ink-2: #464d5e;
   --ink-3: #646a7a;
   --line: #d3d6ce;
-  --accent: #3346d3;
+  --accent: #0c6f86;
   --accent-ink: #f3f4f1;
+  --grad-from: color-mix(in oklab, var(--paper), white 55%);
+  --grad-to: color-mix(in oklab, var(--paper), var(--accent) 6%);
   color-scheme: light;
 }
 
@@ -22,8 +24,10 @@
   --ink-2: #b4b9c4;
   --ink-3: #8a90a0;
   --line: #2b3140;
-  --accent: #8c9bff;
+  --accent: #5ccbe0;
   --accent-ink: #11141b;
+  --grad-from: color-mix(in oklab, var(--paper), var(--accent) 8%);
+  --grad-to: color-mix(in oklab, var(--paper), black 30%);
   color-scheme: dark;
 }
 
@@ -37,7 +41,7 @@
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
   --color-accent-soft: color-mix(in oklab, var(--accent) 12%, transparent);
-  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
 }
 
@@ -62,6 +66,16 @@
       color 0.3s ease;
   }
 
+  /* Soft accent gradient over the viewport; fixed so it does not scroll. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(170deg, var(--grad-from), var(--grad-to));
+  }
+
   ::selection {
     background: var(--accent);
     color: var(--accent-ink);
@@ -77,6 +91,15 @@
     html {
       scroll-behavior: auto;
     }
+  }
+}
+
+@keyframes feed-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 

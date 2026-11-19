@@ -5,13 +5,18 @@ and Motion.
 
 ## Updating the content
 
-All content comes from [`en.yml`](en.yml) (the same data file used by
+All content comes from [`data/en.yml`](data/en.yml) (the same data file used by
 [yuca](https://github.com/yuca-devs/yuca)). Edit it, rebuild, and commit `docs/`:
 
 ```sh
 npm run build
 git add -A && git commit -m "Update CV"
 ```
+
+[`data/it.yml`](data/it.yml) and [`data/es.yml`](data/es.yml) are the Italian and
+Spanish translations, with the same structure. The site currently renders only the
+English file. Keep skill names (in `skills:` and in the `skills` tags) in English in
+every file so they match across languages.
 
 Notes on the data:
 

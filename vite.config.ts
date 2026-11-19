@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig, type Plugin } from "vite";
 import { parse } from "yaml";
 
-// Turns `import data from "../en.yml"` into a plain JS object at build time.
+// Turns `import data from "../data/en.yml"` into a plain JS object at build time.
 function yamlPlugin(): Plugin {
   return {
     name: "yaml",

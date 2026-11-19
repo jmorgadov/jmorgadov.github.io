@@ -1,3 +1,4 @@
+import { useLang } from "../i18n";
 import { skillKey, skillUsage, useSkillFilter } from "../skills";
 
 /**
@@ -6,6 +7,7 @@ import { skillKey, skillUsage, useSkillFilter } from "../skills";
  */
 export function Chip({ name }: { name: string }) {
   const { active, toggle } = useSkillFilter();
+  const { t } = useLang();
   const key = skillKey(name);
   const count = skillUsage.get(key) ?? 0;
   const pressed = active?.key === key;
@@ -20,7 +22,7 @@ export function Chip({ name }: { name: string }) {
       type="button"
       onClick={() => toggle(name)}
       aria-pressed={pressed}
-      title={pressed ? "Clear highlight" : `Highlight work that uses ${name}`}
+      title={pressed ? t.clearHighlight : t.highlightSkill(name)}
       className={`${base} border transition-[color,background-color,border-color,transform] duration-200 active:scale-95 ${
         pressed
           ? "border-accent bg-accent text-accent-ink"

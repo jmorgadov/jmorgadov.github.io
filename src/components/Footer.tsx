@@ -1,15 +1,15 @@
-import { cv } from "../data";
+import { useLang } from "../i18n";
 import { socialIcons } from "./Icons";
 
 export function Footer() {
+  const { cv, t } = useLang();
   const { personal, socials } = cv;
   return (
     <footer id="contact" className="border-t border-line py-20 md:py-28">
-      <h2 className="font-display text-3xl font-semibold tracking-tight">Get in touch</h2>
+      <h2 className="font-display text-3xl font-semibold tracking-tight">{t.getInTouch}</h2>
       <a
         href={`mailto:${personal.email}`}
-        className="mt-4 inline-block font-display text-[clamp(1.6rem,5vw,3.5rem)] font-semibold tracking-tight break-all text-accent transition-opacity hover:opacity-80"
-        style={{ fontStretch: "85%" }}
+        className="mt-4 inline-block font-display text-[clamp(1.5rem,4.5vw,3rem)] font-semibold tracking-tight break-all text-accent transition-opacity hover:opacity-80"
       >
         {personal.email}
       </a>
@@ -34,14 +34,14 @@ export function Footer() {
         })}
       </ul>
       <p className="mt-16 font-display text-sm text-ink-3">
-        © {new Date().getFullYear()} {personal.name} {personal.last_name}. Built with React.{" "}
+        © {new Date().getFullYear()} {personal.name} {personal.last_name}. {t.builtWith}{" "}
         <a
           href={`https://github.com/${personal.user_name}/${personal.user_name}.github.io`}
           target="_blank"
           rel="noreferrer"
           className="underline underline-offset-2 hover:text-accent"
         >
-          Source on GitHub
+          {t.source}
         </a>
       </p>
     </footer>

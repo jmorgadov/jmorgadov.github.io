@@ -1,4 +1,4 @@
-import { siGithub, siGooglescholar, siOrcid, siX } from "simple-icons";
+import { siGithub, siGooglescholar, siOrcid } from "simple-icons";
 import type { SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement>;
@@ -23,7 +23,6 @@ export const socialIcons = {
     icon: (p: IconProps) => <Brand path={siGooglescholar.path} {...p} />,
   },
   orcid: { label: "ORCID", icon: (p: IconProps) => <Brand path={siOrcid.path} {...p} /> },
-  twitter: { label: "X (Twitter)", icon: (p: IconProps) => <Brand path={siX.path} {...p} /> },
 } as const;
 
 function Stroke(props: IconProps) {
@@ -83,5 +82,46 @@ export const MoonIcon = (p: IconProps) => (
 export const CloseIcon = (p: IconProps) => (
   <Stroke {...p}>
     <path d="M6 6l12 12M18 6 6 18" />
+  </Stroke>
+);
+
+export const ChevronLeftIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <path d="m15 5-7 7 7 7" />
+  </Stroke>
+);
+
+export const ChevronRightIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <path d="m9 5 7 7-7 7" />
+  </Stroke>
+);
+
+/** The JM monogram from the favicon: the M's first stem drops into the J's hook. */
+export const MonogramIcon = (p: IconProps) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={6}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+    {...p}
+  >
+    <path d="M47.5 41V17l-10 16-10-16v24a7 7 0 0 1-14 0" />
+  </svg>
+);
+
+export const GlobeIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3 12h18M12 3c2.5 2.6 3.75 5.6 3.75 9S14.5 18.4 12 21c-2.5-2.6-3.75-5.6-3.75-9S9.5 5.6 12 3z" />
+  </Stroke>
+);
+
+export const CheckIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <path d="m5 12.5 4.5 4.5L19 7.5" />
   </Stroke>
 );
